@@ -25,16 +25,18 @@ body{
 
 #container, .icoon{
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
+    width: 7%;
+    height: 14%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
    
 }
 
 .banner{
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 60%;
     background-color:#F5683D;
     position: absolute;
     top: 55%;
@@ -49,7 +51,17 @@ body{
     font-size: 4.5vh;
     text-align: center;
     margin-top:100px;
+   
 }
+
+.banner p{
+    font-family: 'robotomedium', sans-serif;
+    font-size: 2vh;
+    text-align: center;
+     color: white;
+}
+
+
 
 #container{
 	margin: 100px auto 0 auto;
@@ -71,25 +83,29 @@ nav{
 }
 
 button{
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    width: 230px;
+    padding: 15px;
+    width: 50%;
+    border: none;
+    background-color: #45619d;
+    color: white;
+    font-family: 'robotomedium' , sans-serif;
+    font-size: 2.5vh;
 }
 
 
-.indexbtn{
-	position: absolute;
-    left: 50px;
-    z-index: 1;
+.indexbtn{ 
+    position:absolute;
+   
 }
 
 #indexbtn1{
-	top:490px;
+	top:50%;
+    left: 25%;
 }
-#indexbtn2{
+
+/*#indexbtn2{
 	top:540px;
-}
+}*/
 
 h1{
 	font-size: 30px;
@@ -130,3 +146,111 @@ nav img{
 	height:35px;
 	display:inline-block;
 }
+
+#toevoegenbtn{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color:  #F5683D;
+    border: 3px;
+    border-style: dashed;
+    font-size: 8vh;
+    text-align: center;
+    margin-left: 310px;
+    margin-top: 80px;
+}
+
+#spelertoevoegenbtn{
+    width: 400px;
+    height:65px;
+    background-color: white;
+    font-family: 'robotomedium', sans-serif;
+    color: #F5683D;
+    font-size: 35px;
+       
+}
+
+
+.spelerlbl{
+    font-family: 'robotomedium' , sans-serif;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-left: 98px;
+}
+
+
+
+input[type="text"] {
+    width: 200px;
+    margin-left: 98px;
+    margin-top: 15px;
+    border: none;
+}
+
+
+input[type="date"] {
+    width: 200px;
+    margin-left: 98px;
+    margin-top: 15px;
+    border: none;
+}
+
+input[type="radio"] {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 98px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="submit"]{
+    background-color: white;
+    border: none;
+    font-family: 'robotomedium' , sans-serif;
+    color: #F5683D;
+    font-size: 45px;
+    width: 579px;
+    height: 60px;
+    margin-left: 98px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,9 +20,8 @@
 		<img src="images/icon_account.png" alt="account icoon" class="icoon"/>
 
         <div class="banner">
-        <h1>INLOGGEN</h1>
-        <p>Om te kunnen inloggen moet één van de ouders inloggen met Facebook.</p>
-        <a href="speler.php"/><button class="indexbtn" id="indexbtn1">Inloggen met Facebook</button> </a>
+        <h1>Wie gaat er spelen?</h1>
+        <a href="spelertoevoegen.php"/><button id="toevoegenbtn">+</button> </a>
         </div> 
 
 		<!--<img src="images/mascotte_index.png" alt="kinderspelmascotte" class="indeximg"/>-->
