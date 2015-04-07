@@ -6,6 +6,7 @@
 		}
 ?>
 
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -17,6 +18,10 @@
 
 </head>
 <body>
+    
+  
+    
+
 		<img src="images/icon_account.png" alt="account icoon" class="icoon"/>
 
         <div class="banner">
@@ -36,16 +41,26 @@
             <label class="spelerlbl" for="M">JONGEN</label>
             <input type="radio" name="geslacht" value="man" id="M">
 
-            
-                        
-            
-            
-            
             <input type="submit" name="btnSignup" value="SPELER TOEVOEGEN" />
 	    </form>
-			</div>
+            
+            
+            
+        <div id="mainform">
+            <h2>FOTO OPLADEN</h2>
+                <div id="formdiv">
+                <form action="" enctype="multipart/form-data" id="form" method="post" name="form">
+                    <div id="upload">
+                    <input id="file" name="file" type="file">
+                    </div>
+                </form>                    
+                </div>
+        </div>
+        </div>
 
 			
+    
+    
 			
 	
     
