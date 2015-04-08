@@ -340,10 +340,17 @@ label[for="nav-trigger"] {
     font-weight: 100;
 }
 
-#verhaal1 img{
+#verhaal1 img.jungle{
     width: 80px;
     height: 80px;
-    vertical-align: middle;
+    position: absolute;
+}
+
+#verhaal1 img.gratis{
+    float: right;
+    width: 80px;
+    height: 59px;
+    position: relative;
 }
 
 

@@ -34,9 +34,9 @@
     
         <div class="verhalen">
             <div id="verhaal1">
-                <img src="images/junlge.png" alt="jungle"/>
+                <img src="images/junlge.png" alt="jungle" class="jungle"/>
                 <h1>JEFKE DE AAP IN DE JUNGLE</h1>
-                <img src="images/gratis.png" alt="gratis verhaal" />
+                <img src="images/gratis.png" alt="gratis verhaal" class="gratis"/>
             </div>
     
         </div>
