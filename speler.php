@@ -21,6 +21,7 @@
 
         <div class="banner">
         <h1>Wie gaat er spelen?</h1>
+        <p>Hier kan je per kind een account aanmaken.</p>
         <a href="spelertoevoegen.php"/><button id="toevoegenbtn">+</button> </a>
         </div> 
 

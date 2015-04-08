@@ -16,17 +16,37 @@
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+    
+  <ul class="navigation">
+    <img src="images/icon_account.png" alt="profiel" class="profiel"/>
+    <li class="nav-item"><a href="index.php">MIJN OPDRACHTEN</a></li>
+    <li class="nav-item"><a href="mijnverhalen.php">MIJN VERHALEN</a></li>
+    <li class="nav-item"><a href="help.php">HOE WERKT DE APP</a></li>
+</ul>
+ 
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
+ 
+<div class="site-wrap"> 
 
-	<section id="container">
+    <img src="images/star.png" alt="icoon star" class="storyicoon"/>
+    <h1 class="story">KIES EEN VERHAAL</h1>  
+    
+        <div class="verhalen">
+            <div id="verhaal1">
+                <img src="images/junlge.png" alt="jungle"/>
+                <h1>JEFKE DE AAP IN DE JUNGLE</h1>
+                <img src="images/gratis.png" alt="gratis verhaal" />
+            </div>
+    
+        </div>
 
-		<img src="images/icon_account.png" alt="account icon" class="bol"/>
-		
-		<h1>EEN NIEUWE CHALLENGE STARTEN</h1>
-
-
-	</section>
-	<?php include_once('classes/nav_incl.php') ?>
-
+       
+</div>     
+    
+    
+ 
+	
 
 	
 </body>

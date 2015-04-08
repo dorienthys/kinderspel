@@ -41,7 +41,7 @@
             <label class="spelerlbl" for="M">JONGEN</label>
             <input type="radio" name="geslacht" value="man" id="M">
 
-            <input type="submit" name="btnSignup" value="SPELER TOEVOEGEN" />
+          <input type="submit" name="btnSignup" value="SPELER TOEVOEGEN" />
 	    </form>
             
             
