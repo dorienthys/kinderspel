@@ -12,14 +12,17 @@
 	<meta charset="UTF-8">
 	<title>Kinderspel startpagina</title>
 	<meta name="description" content="Kinderspel app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
 
 </head>
 <body>
-		<img src="images/icon_account.png" alt="account icoon" class="icoon"/>
+		
 
         <div class="banner">
+        <img src="images/icon_account.png" alt="account icoon" class="icoon"/>
         <h1>INLOGGEN</h1>
         <p>Om te kunnen inloggen moet één van de ouders inloggen met Facebook.</p>
         <a href="speler.php"/><button class="indexbtn" id="indexbtn1">Inloggen met Facebook</button> </a>

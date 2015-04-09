@@ -13,8 +13,10 @@
 	<meta charset="UTF-8">
 	<title>Kinderspel startpagina</title>
 	<meta name="description" content="Kinderspel app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
 
 </head>
 <body>
@@ -22,9 +24,10 @@
   
     
 
-		<img src="images/icon_account.png" alt="account icoon" class="icoon"/>
+		
 
         <div class="banner">
+            <img src="images/icon_account.png" alt="account icoon" class="icoon"/>
         <h1>Voeg een nieuwe speler toe.</h1>
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">

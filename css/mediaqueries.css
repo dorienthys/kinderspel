@@ -1,0 +1,127 @@
+
+
+@media  screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+#container, .icoon{
+    top: 28%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.banner{
+    width: 500px;
+    height: 400px;
+}
+
+.banner h1{
+    margin-top:80px;
+}
+    
+button{
+    padding: 20px;
+    width: 80%;
+}
+    
+#indexbtn1{
+    left: 10%;
+    top: 60%;
+}    
+
+.banner p{
+    margin: 10px; 
+}
+  
+#lblnaam{
+    margin-left: 50px;
+} 
+
+#lbldatum{
+    margin-left: 50px;
+}
+
+input[type="text"] {
+    margin-left: 50px;
+}
+
+
+input[type="date"] {
+    margin-left: 50px;
+}
+
+input[type="radio"] {
+    margin-left: 50px;
+}
+
+input[type="submit"]{
+    width: 500px;
+    height: 60px;
+    margin-left: 90px;
+
+}
+
+#mainform{
+    margin-left: 360px;
+}
+
+.site-wrap {
+    background-image: url(../images/banner2.png);
+}
+    
+img.storyicoon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+
+}
+  }
+
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+#container, .icoon{
+    top: 10%;
+    width: 20px;
+    height: 20px;   
+}
+
+.banner{
+    width: 500px;
+    height: 400px;
+}
+
+button{
+    padding: 20px;
+    width: 80%;
+}
+
+#indexbtn1{
+    left: 10%;
+    top: 60%;
+}
+    
+#toevoegenbtn{
+    margin-left: 173px;
+    margin-top: 28px;
+}
+
+      
+}
+
+
+
+    
+    
+    
+}
+        
+      

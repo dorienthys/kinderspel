@@ -12,14 +12,17 @@
 	<meta charset="UTF-8">
 	<title>Kinderspel startpagina</title>
 	<meta name="description" content="Kinderspel app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
 
 </head>
 <body>
-		<img src="images/icon_account.png" alt="account icoon" class="icoon"/>
+		
 
         <div class="banner">
+        <img src="images/icon_account.png" alt="account icoon" class="icoon"/>
         <h1>Wie gaat er spelen?</h1>
         <p>Hier kan je per kind een account aanmaken.</p>
         <a href="spelertoevoegen.php"/><button id="toevoegenbtn">+</button> </a>

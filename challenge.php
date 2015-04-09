@@ -12,16 +12,20 @@
 	<meta charset="UTF-8">
 	<title>Challenge kiezen</title>
 	<meta name="description" content="Kinderspel app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
 </head>
 <body>
+
+    
     <!--hamburger menu-->
   <ul class="navigation">
     <img src="images/icon_account.png" alt="profiel" class="profiel"/>
     <li class="nav-item"><a href="index.php">MIJN OPDRACHTEN</a></li>
     <li class="nav-item"><a href="mijnverhalen.php">MIJN VERHALEN</a></li>
-    <li class="nav-item"><a href="help.php">HOE WERKT DE APP</a></li>
+    <li class="nav-item"><a href="help.php">HELP</a></li>
 </ul>
     
  
