@@ -229,7 +229,7 @@ input[type="submit"]{
     font-size: 25px;
 }
 
-
+/*BEGIN HAMBURGER*/
 .navigation {
     list-style: none;
     background: #F5683D;
@@ -318,13 +318,21 @@ label[for="nav-trigger"] {
     left: 400px;
 }
 
+/*EINDE HAMBURGER*/
 
 .story{
     font-family: 'robotomedium', sans-serif;
     font-weight:100;
     color: #F5683D;
     margin-top: 25px;
+    font-size: 40px;
 }
+
+.verhalen{
+    position: relative;
+}
+
+/*BEGIN VERHAAL1*/
 
 #verhaal1{
     width: 822px;
@@ -338,25 +346,136 @@ label[for="nav-trigger"] {
 #verhaal1 h1{
     font-family: 'robotomedium', sans-serif;
     font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(50%, -50%);
+    
 }
 
-#verhaal1 img.jungle{
-    width: 80px;
+img.foto{
+    width: 100px;
     height: 80px;
     position: absolute;
+    top: 50%;                         
+    transform: translate(22%, -50%);
 }
 
-#verhaal1 img.gratis{
+
+#btn1{
+    width: 100px;
+    height: 35px;
+    background-color: #5ebc4b;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
     float: right;
-    width: 80px;
-    height: 59px;
-    position: relative;
 }
 
+/* EINDE VERHAAL1*/
 
 
+/*BEGIN VERHAAL2*/
+#verhaal2{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal2 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(25%, -50%);
+    
+}
+
+#btn2{
+    width: 100px;
+    height: 35px;
+    background-color: #415e9b;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
+    float: right;
+}
+
+/*EINDE VERHAAL2*/
 
 
+/*BEGIN VERHAAL2*/
+#verhaal3{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal3 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(90%, -50%);
+    
+}
+
+#btn3{
+    width: 100px;
+    height: 35px;
+    background-color: #ffffff;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: #F5683D;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
+    float: right;
+}
+
+/*EINDE VERHAAL3*/
+
+/*BEGIN VERHAAL4*/
+#verhaal4{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal4 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(48%, -50%);
+}
+/*EINDE VERHAAL4*/
 
 
 
