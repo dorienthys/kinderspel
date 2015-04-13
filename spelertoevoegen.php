@@ -31,26 +31,34 @@
         <h1>Voeg een nieuwe speler toe.</h1>
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-            <label class="spelerlbl" id="lblnaam">NAAM</label>
-
-			<input type="text" name="username" placeholder="Naam" required="required" />
-
-            <label class="spelerlbl" id="lbldatum">GEBOORTEDATUM</label>
-
-			<input type="date" name="date" placeholder="Geboortedatum" required="required"/>
             
-            <label class="spelerlbl" for="V">MEISJE</label>
-            <input type="radio" name="geslacht" value="vrouw" id="V" checked>
-            <label class="spelerlbl" for="M">JONGEN</label>
-            <input type="radio" name="geslacht" value="man" id="M">
+            <div class="formblok">
+            <label for="surname">NAAM</label>
+			<input type="text" name="surname" placeholder="voornaam"required="required" />
+            <input type="text" name="name" placeholder="achternaam"required="required" />
+            </div>
 
-          <input type="submit" name="btnSignup" value="SPELER TOEVOEGEN" />
-	    </form>
+            <div class="formblok">
+            <label for="username">USERNAME & WACHTWOORD</label>
+            <input type="text" name="username" id="username" placeholder="username"required="required" />
+            <input type="password" name="password" placeholder="wachtwoord"required="required" />
+            </div>
             
-            
-            
-        <div id="mainform">
-            <h2>FOTO OPLADEN</h2>
+            <div class="formblok">
+            <label for="date">GEBOORTEDATUM</label>
+			<input type="date" name="date" id="date" placeholder="Geboortedatum" required="required"/>
+            </div>
+
+            <div class="formblok">
+            <!--<label class="spelerlbl" for="V">MEISJE</label>-->
+            <label for="geslacht">GESLACHT</label>
+            <input type="radio" id="geslacht" name="geslacht" value="vrouw" id="V" checked>MEISJE</input>
+            <!--<label class="spelerlbl" for="M">JONGEN</label>-->
+            <input type="radio" name="geslacht" value="man" id="M">JONGEN</input>
+            </div>
+
+                <div id="mainform">
+            <label for="formdiv">FOTO UPLOADEN</label>
                 <div id="formdiv">
                 <form action="" enctype="multipart/form-data" id="form" method="post" name="form">
                     <div id="upload">
@@ -59,21 +67,20 @@
                 </form>                    
                 </div>
         </div>
+
+          <input type="submit" name="btnSignup" value="SPELER TOEVOEGEN"/>
+	    </form>
+            
+            
+            
+
+      
+
+
+
+
         </div>
 
-			
-    
-    
-			
-	
-    
-    
-    
 
-		<!--<img src="images/mascotte_index.png" alt="kinderspelmascotte" class="indeximg"/>-->
-
-		
-		<!--<a href="register.php"/><button class="indexbtn" id="indexbtn2">Een account aanmaken</button> </a>-->
-	
 </body>
 </html>

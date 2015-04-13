@@ -37,7 +37,7 @@ p{
 	min-height: 500px;
 }
 
-h1, h2{
+h1,h2{
     text-align: center;
 	color:white;
 }
@@ -49,7 +49,7 @@ h1{
 
 h2{
 	font-size: 20px;
-    margin: 20px;
+    margin: 70px 0 10px 0;
 }
 
 p,a, label{
@@ -107,19 +107,388 @@ h1{
 	font-weight: 100;
 	text-align: center;
 	margin-bottom: 20px;
+}
 
-.indexbtn {
-  margin-left: 31%;
+form{
+    margin-top: 20px;
+}
+
+.formblok {
+  margin-bottom: 20px;
+  color:white;
+}
+
+input {
+  font-size: 15px;
+  width: 46%;
+  padding: 5px;
+  height: 20px;
+  margin: 5px;
+}
+
+.login{
+    margin-right: auto;
+    margin-left:auto;
+    display:block;
+}
+
+.indexbtn, button {
+  margin-left: 25%;
   margin-top: 20px;
 }
+#fbbtn{
+margin-top: 30px
+}
+
+#indexbtn1, #indexbtn2 {
+  background-color: #489DF9;
+}
+
 
 
 /* ---------------- FORMS : LOGIN, REGISTER; ----------------*/
 
-form{
-	margin-top: 50px;
+.formblok {
+  margin-bottom: 20px;
 }
 
-.formblok{
-	margin-bottom:50px;
+input{
+    display:inline-block;
+    margin: 1%;
+    height:25px;
+    width:45%;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
 }
+
+.subbtn{
+    text-align: center;
+}
+
+nav img{
+    margin-top: 10px;
+    height:35px;
+    display:inline-block;
+}
+
+#toevoegenbtn{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color:  #F5683D;
+    border: 3px;
+    border-style: dashed;
+    font-size: 8vh;
+    text-align: center;
+    margin-left: 280px;
+    margin-top: 80px;
+}
+
+#spelertoevoegenbtn{
+    width: 400px;
+    height:65px;
+    background-color: white;
+    font-family: 'robotomedium', sans-serif;
+    color: #F5683D;
+    font-size: 35px;
+       
+}
+
+
+.spelerlbl{
+    font-family: 'robotomedium' , sans-serif;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-left: 98px;
+}
+
+
+
+input[type="text"], input[type="date"], input[type="password"]  {
+    margin-top: 15px;
+    border: none;
+}
+
+input[type="radio"] {
+    position: relative;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    color:white;
+}
+
+input[type="submit"]{
+    background-color: white;
+    border: none;
+    font-family: 'robotomedium' , sans-serif;
+    color: #F5683D;
+    font-size: 35px;
+    /*width: 579px;*/
+    width:50%;
+    height: 60px;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+/*#mainform{
+    position: relative;
+    margin-top: -370px;
+    margin-left: 416px;
+}*/
+
+/*BEGIN HAMBURGER*/
+.navigation {
+    list-style: none;
+    background: #F5683D;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    font-family: 'robotomedium' , sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 110px;
+    }
+
+img.profiel{
+    height: 100px;
+    width: 100px;
+}
+
+.navigation .nav-item{
+    background-color: white;
+    height: 80px;
+    margin-top: 20px; 
+}
+
+.navigation .nav-item a{
+    text-decoration: none;
+    color: #F5683D;
+    padding: 0.5em 1em 0.5em 1.5em;
+    position: absolute;
+    margin-top: 12px;
+}
+
+/*EINDE HAMBURGER*/
+
+.site-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 4em;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+    background-size: 100%;
+    height: 830px;
+}
+
+
+
+img.storyicoon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+label[for="nav-trigger"] {
+    /* ... previous styles here... */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url("../images/menu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 415px;
+}
+ 
+.nav-trigger:checked ~ .site-wrap {
+    left: 400px;
+}
+
+/*EINDE HAMBURGER*/
+
+.story{
+    font-family: 'robotomedium', sans-serif;
+    font-weight:100;
+    color: #F5683D;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.verhalen{
+    position: relative;
+}
+
+/*BEGIN VERHAAL1*/
+
+#verhaal1{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#verhaal1 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(50%, -50%);
+    
+}
+
+img.foto{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(22%, -50%);
+}
+
+
+#btn1{
+    width: 100px;
+    height: 35px;
+    background-color: #5ebc4b;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
+    float: right;
+}
+
+/* EINDE VERHAAL1*/
+
+
+/*BEGIN VERHAAL2*/
+#verhaal2{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal2 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(25%, -50%);
+    
+}
+
+#btn2{
+    width: 100px;
+    height: 35px;
+    background-color: #415e9b;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
+    float: right;
+}
+
+/*EINDE VERHAAL2*/
+
+
+/*BEGIN VERHAAL2*/
+#verhaal3{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal3 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(90%, -50%);
+    
+}
+
+#btn3{
+    width: 100px;
+    height: 35px;
+    background-color: #ffffff;
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    color: #F5683D;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 8px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(700%, -50%);
+    float: right;
+}
+
+/*EINDE VERHAAL3*/
+
+/*BEGIN VERHAAL4*/
+#verhaal4{
+    width: 822px;
+    height: 100px;
+    background-color: #F5683D;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#verhaal4 h1{
+    font-family: 'robotomedium', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(48%, -50%);
+}
+/*EINDE VERHAAL4*/
+
+

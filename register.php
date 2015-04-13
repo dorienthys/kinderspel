@@ -33,33 +33,39 @@ if (isset($_POST['btnSignup']))
 	<meta name="description" content="Kinderspel app">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/conflict.css"/>
 </head>
 <body>
 	<section id="container">
 		<img src="images/icon_register.png" alt="account icon" class="bol"/>
+		<h1>REGISTRATIE</h1>
+		<p>Hier maak je een ouder-account aan voor "Da's Kinderspel". Dit account gebruik je om deze applicatie te beheren. Nadien kan je kind-accounts aanmaken om jouw kinderen de app te laten gebruiken.</p>
 
-		<h1>EEN ACCOUNT AANMAKEN</h1>
-		<h2>Hier maak je een ouder-account aan voor "Da's Kinderspel". Dit account gebruik je om deze applicatie te beheren. Nadien kan je kind-accounts aanmaken om jouw kinderen de app te laten gebruiken.</h2>
+		<h2>FACEBOOK REGISTRATIE</h2>
+		
+		<a href="speler.php"/><button class="indexbtn" id="fbbtn">Inloggen met Facebook</button> </a>
+
+		<h2>ZELF EEN ACCOUNT AANMAKEN</h2>
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 			<div class="formblok">
 				<label for="username">Kies een unieke gebruikersnaam en paswoord voor jouw ouder-account</label>
-				<input type="text" name="username" placeholder="gebruikersnaam"required="required" />
+				<input type="text" name="username" id="username" placeholder="gebruikersnaam"required="required" />
 				<input type="password" id="password1" name="password1" placeholder="wachtwoord"/>
 				<input type="password" id="password2" name="password2" placeholder="wachtwoord herhalen"/>
 			
 			</div>
 			<div class="formblok">
-				<label for="username">Vul hier je eigen naam in.</label>
-				<input type="text" name="surname" placeholder="voornaam"required="required" />
-				<input type="text" name="name" placeholder="achternaam"required="required" />
+				<label for="surname">Vul hier je eigen naam in.</label>
+				<input type="text" name="surname" id="surname" placeholder="voornaam"required="required" />
+				<input type="text" name="name" id="name" placeholder="achternaam"required="required" />
 			</div>
 			<div class="formblok">
-				<label for="username">Vul hier jouw e-mailadres in, hierop krijg je later de gegevens van jouw account.</label>
+				<label for="email">Vul hier jouw e-mailadres in, hierop krijg je later de gegevens van jouw account.</label>
 				<input type="email" id="email" name="email" placeholder="Email"/>
 			</div>
 			<div class="formblok">
-				<label for="username">Jouw geboortedatum</label>	
-				<input type="date" name="date" placeholder="Geboortedatum" required="required"/>
+				<label for="date">Jouw geboortedatum</label>	
+				<input type="date" name="date" id="date" placeholder="Geboortedatum" required="required"/>
 			</div>
 			<div class="formblok">
 				</div>
