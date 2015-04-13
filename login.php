@@ -27,14 +27,17 @@ if (isset($_POST['btnLogin']))
 		<img src="images/icon_account.png" alt="account icon" class="bol"/>
 		
 		<h1>AANMELDEN</h1>
+		<h2>Heb je al een account? Log je dan hier in met jouw gebruikersnaam en wachtwoord.</h2>
 
 		<form action="" method="post">
-		<input type="text" name="username" placeholder="gebruikersnaam" required="required" />
-		<input type="password" name="password" placeholder="Paswoord" required="required"/>
+			<div class="formblok">
+				<input type="text" name="username" placeholder="gebruikersnaam" required="required" />
+				<input type="password" name="password" placeholder="Paswoord" required="required"/>
+			</div>
 		<input type="submit" name="btnLogin" value="Inloggen" />
 		</form>
 
-		<a href="register.php">Nog geen account? Klik dan hier.</a> 
+		<a href="register.php"class="subbtn">Nog geen account? Klik dan hier.</a> 
 
 
 

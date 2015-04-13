@@ -21,8 +21,8 @@
 <body>
 		
 
-        <div class="banner">
-        <img src="images/icon_account.png" alt="account icoon" class="icoon"/>
+        <div id="container">
+        <img src="images/icon_account.png" alt="account icoon" class="bol"/>
         <h1>Wie gaat er spelen?</h1>
         <p>Hier kan je per kind een account aanmaken.</p>
         <a href="spelertoevoegen.php"/><button id="toevoegenbtn">+</button> </a>

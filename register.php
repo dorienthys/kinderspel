@@ -37,36 +37,45 @@ if (isset($_POST['btnSignup']))
 <body>
 	<section id="container">
 		<img src="images/icon_register.png" alt="account icon" class="bol"/>
-		<a href="login.php">Heb je al een account? Klik dan hier om in te loggen.</a> 
 
 		<h1>EEN ACCOUNT AANMAKEN</h1>
-
-		
+		<h2>Hier maak je een ouder-account aan voor "Da's Kinderspel". Dit account gebruik je om deze applicatie te beheren. Nadien kan je kind-accounts aanmaken om jouw kinderen de app te laten gebruiken.</h2>
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-			<input type="text" name="username" placeholder="gebruikersnaam"required="required" />
-			<input type="text" name="surname" placeholder="voornaam"required="required" />
-			<input type="text" name="name" placeholder="achternaam"required="required" />
-
-			<input type="email" id="email" name="email" placeholder="Email"/>
-			<input type="date" name="date" placeholder="Geboortedatum" required="required"/>
-
-			<input type="password" id="password1" name="password1" placeholder="wachtwoord"/>
-			<input type="password" id="password2" name="password2" placeholder="wachtwoord herhalen"/>
-
+			<div class="formblok">
+				<label for="username">Kies een unieke gebruikersnaam en paswoord voor jouw ouder-account</label>
+				<input type="text" name="username" placeholder="gebruikersnaam"required="required" />
+				<input type="password" id="password1" name="password1" placeholder="wachtwoord"/>
+				<input type="password" id="password2" name="password2" placeholder="wachtwoord herhalen"/>
+			
 			</div>
+			<div class="formblok">
+				<label for="username">Vul hier je eigen naam in.</label>
+				<input type="text" name="surname" placeholder="voornaam"required="required" />
+				<input type="text" name="name" placeholder="achternaam"required="required" />
+			</div>
+			<div class="formblok">
+				<label for="username">Vul hier jouw e-mailadres in, hierop krijg je later de gegevens van jouw account.</label>
+				<input type="email" id="email" name="email" placeholder="Email"/>
+			</div>
+			<div class="formblok">
+				<label for="username">Jouw geboortedatum</label>	
+				<input type="date" name="date" placeholder="Geboortedatum" required="required"/>
+			</div>
+			<div class="formblok">
+				</div>
 
 		<div class="feedback">
 			<?php
 		
-		if(!empty($feedback)){
+		if(!empty($feedback))
+		{
 			 echo $feedback; 
-		}
-		 
-		 ?></div>
+		} ?>
+		</div>
 
-
-			<input type="submit" name="btnSignup" value="Jouw account aanmaken" />
-			
+	<input type="submit" name="btnSignup" value="Jouw account aanmaken" />
+	<a href="login.php" class="subbtn">Heb je al een account? Klik dan hier om in te loggen.</a> 
+		
 		</form>
 		
 	</section>

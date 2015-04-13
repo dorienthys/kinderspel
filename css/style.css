@@ -1,3 +1,5 @@
+/* ---------------- ALGEMEEN ----------------*/
+
 @font-face {
     font-family: 'robotomedium';
     src: url('Roboto-Medium-webfont.eot');
@@ -13,118 +15,60 @@
 
 body{
 	background-color: #489DF9;
- 
+     font-family: 'robotomedium' , sans-serif;
 }
 
 #container, .indeximg{
-	padding:20px;
 	background-color: #F5683D;
-	width:90%;
+	width:80%;
 	z-index:-1;
 }
 
-#container, .icoon{
-    position: absolute;
-    left: 50%;
-    width: 125px;
-    height: 125px;
-    transform: translate(-50%, -50%);
-   
-}
-
-.banner{
-    width: 700px;
-    height: 500px;
-    background-color:#F5683D;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.banner h1{
-    font-family: 'robotomedium' , sans-serif;
-    font-size: 45px;
-    text-align: center;
-    margin-top:100px;
-   
-}
-
-.banner p{
+p{
     font-family: 'robotomedium', sans-serif;
     font-size: 20px;
     text-align: center;
      color: white;
 }
 
-
-
 #container{
 	margin: 100px auto 0 auto;
-	padding-top: 75px;
+	padding:50px;
+	min-height: 500px;
 }
 
+h1, h2{
+    text-align: center;
+	color:white;
+}
+
+h1{
+    font-size: 30px;
+    margin: 30px;
+}
+
+h2{
+	font-size: 20px;
+    margin: 20px;
+}
+
+p,a, label{
+	color:white;
+	display: block;
+}
 nav{
 	max-width:340px;
 	width:100%;
 	margin: 0 auto 0 auto;
 }
 
-.bol
-{
-	position:absolute;
-	z-index:1;
-	top:20px;
-	left:40%;
-}
-
-button{
-    padding: 15px;
-    width: 50%;
-    border: none;
-    background-color: #45619d;
-    color: white;
-    font-family: 'robotomedium' , sans-serif;
-    font-size: 2.5vh;
+.bol {
+  display: block;
+  margin: -115px auto 50px auto;
 }
 
 
-.indexbtn{ 
-    position:absolute;
-   
-}
-
-#indexbtn1{
-	top:50%;
-    left: 25%;
-}
-
-/*#indexbtn2{
-	top:540px;
-}*/
-
-h1{
-	font-size: 30px;
-	color:white;
-	font-weight: 100;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-input{
-	display:block;
-	margin-bottom: 10px;
-	height:25px;
-	width:95%;
-	padding:3px;
-	font-size: 15px;
-}
-
-input[type="submit"]{
-	font-size:20px;
-}
+/* ---------------- INDEXPAGE ----------------*/
 
 nav{
 	background-color: yellow;
@@ -145,345 +89,37 @@ nav img{
 	display:inline-block;
 }
 
-#toevoegenbtn{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color:  #F5683D;
-    border: 3px;
-    border-style: dashed;
-    font-size: 8vh;
-    text-align: center;
-    margin-left: 280px;
-    margin-top: 80px;
-}
+/* ---------------- INDEXPAGE ----------------*/
 
-#spelertoevoegenbtn{
-    width: 400px;
-    height:65px;
-    background-color: white;
-    font-family: 'robotomedium', sans-serif;
-    color: #F5683D;
-    font-size: 35px;
-       
-}
-
-
-.spelerlbl{
-    font-family: 'robotomedium' , sans-serif;
-    font-size: 22px;
-    color: white;
-    position: relative;
-    text-align: center;
-    margin-left: 98px;
-}
-
-
-
-input[type="text"] {
-    width: 240px;
-    margin-left: 98px;
-    margin-top: 15px;
+button{
+    padding: 15px;
+    width: 50%;
     border: none;
-}
-
-
-input[type="date"] {
-    width: 240px;
-    margin-left: 98px;
-    margin-top: 15px;
-    border: none;
-}
-
-input[type="radio"] {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 98px;
-    width: 20px;
-    height: 20px;
-}
-
-input[type="submit"]{
-    background-color: white;
-    border: none;
-    font-family: 'robotomedium' , sans-serif;
-    color: #F5683D;
-    font-size: 45px;
-    width: 579px;
-    height: 60px;
-    margin-left: 98px;
-
-}
-
-#mainform{
-    position: relative;
-    margin-top: -370px;
-    margin-left: 416px;
-}
-
-#mainform h2{
-    font-family: 'robotomedium' , sans-serif;
+    background-color: #45619d;
     color: white;
-    font-size: 25px;
-}
-
-/*BEGIN HAMBURGER*/
-.navigation {
-    list-style: none;
-    background: #F5683D;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
     font-family: 'robotomedium' , sans-serif;
-    font-weight: 200;
-    font-size: 30px;
-    margin-top: 110px;
-    }
-
-img.profiel{
-    height: 100px;
-    width: 100px;
+    font-size: 2.5vh;
 }
 
-.navigation .nav-item{
-    background-color: white;
-    height: 80px;
-    margin-top: 20px; 
-}
+h1{
+	font-size: 30px;
+	color:white;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 20px;
 
-.navigation .nav-item a{
-    text-decoration: none;
-    color: #F5683D;
-    padding: 0.5em 1em 0.5em 1.5em;
-    position: absolute;
-    margin-top: 12px;
-}
-
-/*EINDE HAMBURGER*/
-
-.site-wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 4em;
-    background-image: url(../images/banner.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: white;
-    background-size: 100%;
-    height: 830px;
+.indexbtn {
+  margin-left: 31%;
+  margin-top: 20px;
 }
 
 
+/* ---------------- FORMS : LOGIN, REGISTER; ----------------*/
 
-img.storyicoon{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-
+form{
+	margin-top: 50px;
 }
 
-.nav-trigger {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
+.formblok{
+	margin-bottom:50px;
 }
-
-
-label[for="nav-trigger"] {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-}
-
-label[for="nav-trigger"] {
-    /* ... previous styles here... */
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background-image: url("../images/menu.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.nav-trigger:checked + label {
-    left: 415px;
-}
- 
-.nav-trigger:checked ~ .site-wrap {
-    left: 400px;
-}
-
-/*EINDE HAMBURGER*/
-
-.story{
-    font-family: 'robotomedium', sans-serif;
-    font-weight:100;
-    color: #F5683D;
-    margin-top: 25px;
-    font-size: 40px;
-}
-
-.verhalen{
-    position: relative;
-}
-
-/*BEGIN VERHAAL1*/
-
-#verhaal1{
-    width: 822px;
-    height: 100px;
-    background-color: #F5683D;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-}
-
-#verhaal1 h1{
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(50%, -50%);
-    
-}
-
-img.foto{
-    width: 100px;
-    height: 80px;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(22%, -50%);
-}
-
-
-#btn1{
-    width: 100px;
-    height: 35px;
-    background-color: #5ebc4b;
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    color: white;
-    font-size: 18px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 8px;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(700%, -50%);
-    float: right;
-}
-
-/* EINDE VERHAAL1*/
-
-
-/*BEGIN VERHAAL2*/
-#verhaal2{
-    width: 822px;
-    height: 100px;
-    background-color: #F5683D;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#verhaal2 h1{
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(25%, -50%);
-    
-}
-
-#btn2{
-    width: 100px;
-    height: 35px;
-    background-color: #415e9b;
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    color: white;
-    font-size: 18px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 8px;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(700%, -50%);
-    float: right;
-}
-
-/*EINDE VERHAAL2*/
-
-
-/*BEGIN VERHAAL2*/
-#verhaal3{
-    width: 822px;
-    height: 100px;
-    background-color: #F5683D;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#verhaal3 h1{
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(90%, -50%);
-    
-}
-
-#btn3{
-    width: 100px;
-    height: 35px;
-    background-color: #ffffff;
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    color: #F5683D;
-    font-size: 18px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 8px;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(700%, -50%);
-    float: right;
-}
-
-/*EINDE VERHAAL3*/
-
-/*BEGIN VERHAAL4*/
-#verhaal4{
-    width: 822px;
-    height: 100px;
-    background-color: #F5683D;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#verhaal4 h1{
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
-    position: absolute;
-    top: 50%;                         
-    transform: translate(48%, -50%);
-}
-/*EINDE VERHAAL4*/
-
-
-
-
-
-
-
-
-

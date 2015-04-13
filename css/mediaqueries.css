@@ -1,21 +1,25 @@
+@media screen (max-width: 500px) {
+body{
+width:86%;
+}
+
+input{
+    width:90%;
+}
+.indexbtn {
+  margin-left: auto;
+}
+}
+
 
 @media screen (min-width: 768px) {
 
-#container, .icoon{
+/*#container, .icoon{
     top: 28%;
     left: 50%;
     width: 20px;
     height: 20px;
-}
-
-.banner{
-    width: 50px;
-    height: 400px;
-}
-
-.banner h1{
-    margin-top:80px;
-}
+}*/
     
 button{
     padding: 20px;
@@ -27,7 +31,7 @@ button{
     top: 60%;
 }    
 
-.banner p{
+#container p{
     margin: 10px; 
 }
   
@@ -39,7 +43,7 @@ button{
     margin-left: 50px;
 }
 
-input[type="text"] {
+/*input[type="text"] {
     margin-left: 50px;
 }
 
@@ -57,7 +61,7 @@ input[type="submit"]{
     height: 60px;
     margin-left: 90px;
 
-}
+}*/
 
 #mainform{
     margin-left: 360px;

@@ -26,8 +26,8 @@
 
 		
 
-        <div class="banner">
-            <img src="images/icon_account.png" alt="account icoon" class="icoon"/>
+        <div id="container">
+            <img src="images/icon_account.png" alt="account icoon" class="bol"/>
         <h1>Voeg een nieuwe speler toe.</h1>
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
