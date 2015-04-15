@@ -1,5 +1,5 @@
 <?php 
-include_once("classes/User.class.php");
+//include_once("classes/User.class.php");
 if (isset($_POST['btnSignup'])) 
 {
 		try
@@ -12,6 +12,7 @@ if (isset($_POST['btnSignup']))
 		$user -> Password2 = $_POST['password2'];
 		$user -> Email = $_POST['email'];
 		$user -> Date = $_POST['date'];
+		$user -> Checkpass();
 		$user -> Register();
 		}
 	
@@ -30,7 +31,6 @@ if (isset($_POST['btnSignup']))
 	<meta name="description" content="Kinderspel app">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/conflict.css"/>
 </head>
 <body>
 	<section id="container">

@@ -5,7 +5,7 @@ include_once("classes/User.class.php");
 if (isset($_POST['btnLogin'])) 
 {
 	$user = new User();
-	$user -> Name = $_POST['username'];
+	$user -> Username = $_POST['username'];
 	$user -> Password = $_POST['password'];
 	$user -> canLogin();
 }
@@ -19,7 +19,6 @@ if (isset($_POST['btnLogin']))
 	<meta name="description" content="Kinderspel app">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="css/conflict.css"/>
 
 </head>
 <body>

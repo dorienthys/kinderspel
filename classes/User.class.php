@@ -3,6 +3,7 @@
 	
 	class User
 	{
+		private $m_sUsername;
 		private $m_sVoornaam;
 		private $m_sName;
 		private $m_sEmail;
@@ -15,7 +16,7 @@
 		{
 			switch($p_sProperty)
 			{
-				case "Username": $this->m_sVoornaam = $p_vValue;
+				case "Username": $this->m_sUsername = $p_vValue;
 				//check of username al bestaat
 				/*if()
 				{
@@ -39,7 +40,7 @@
 
 				case "Date": $this->m_sDate = $p_vValue;
 				//check of leeftijd > 
-				if(strtotime($p_vValue) > now())
+				if(strtotime(now()) - strtotime($p_vValue) < 18)
 				{
 					throw new Exception("Nog geen 18? Vraag je ouders om een Kinderspel account aan te maken.");
 				}
@@ -49,16 +50,8 @@
 				//check of paswoord minstens 5 karakters is
 				if(strlen($p_vValue) < 5)
 				{
-					throw new Exception("Password not long enough.");
+					throw new Exception("Dit wachtwoord is niet lang genoeg.");
 				}
-				//check of paswoord repeat juist
-				/*if($p_vValue != $m_sPassword2)
-				{
-					throw new Exception("Paswoord niet identiek.");
-				}*/
-
-
-
 				$salt = "ergzg85fhfhf0ea6g5654";
 				$this->m_sPassword = md5($p_vValue.$salt);
 				break;
@@ -67,6 +60,8 @@
 				
 			}
 		}
+
+
 		public function __get($p_sProperty)
 		{
 			$vResult = null;
@@ -91,11 +86,23 @@
 			}
 		}
 
+		public function Checkpass()
+		{
+			//check of paswoord repeat juist
+				if($this->m_sPassword2 != $this->m_sPassword)
+				{
+					throw new Exception("Paswoord niet identiek.");
+				}
+		}
+
+				
+
 		public function Register()
 		{
-			// save user to database
-			$db = new Database();
-			$sSql = "insert into tblusers (username, paswoord, voornaam, naam, email, geboortedatum)
+
+	// save user to database
+				$db = new Database();
+				$sSql = "insert into tblusers (username, paswoord, voornaam, naam, email, geboortedatum)
 					values(
 							'".$db->conn->real_escape_string($this->m_sUsername)."'
 							'".$db->conn->real_escape_string($this->m_sPassword)."'
@@ -106,15 +113,20 @@
 							
 					)";
 			$rResult = $db->conn->query($sSql);
-			header('Location: login.php');
+			header('Location: index.php');
+				
+
+			
 		}
 
 		public function canLogin()
 		{
 			session_start();
 			$db = new Database();
-			$sql = "SELECT * FROM tblusers WHERE naam ='" . $this->m_sName . "' AND password = '" . $this->m_sPassword . "';";			
+			$sql = "SELECT * FROM tblusers WHERE naam ='" . $this->m_sUsername . "' AND password = '" . $this->m_sPassword . "';";			
 			$check = $db->conn->query($sql);
+
+			echo "$sql";
 
 			if(mysqli_num_rows($check) == 1)
 			{
