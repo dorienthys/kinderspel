@@ -2,16 +2,14 @@
 include_once("classes/User.class.php");
 if (isset($_POST['btnSignup'])) 
 {
-	/*if ($_POST['password1'] = $_POST['password2']) 
-	{*/
-	
 		try
 		{
 		$user = new User();
-		$user -> Password = $_POST['password1'];
 		$user -> Username = $_POST['username'];
 		$user -> Surname = $_POST['surname'];
 		$user -> Name = $_POST['name'];
+		$user -> Password = $_POST['password1'];
+		$user -> Password2 = $_POST['password2'];
 		$user -> Email = $_POST['email'];
 		$user -> Date = $_POST['date'];
 		$user -> Register();
@@ -21,7 +19,6 @@ if (isset($_POST['btnSignup']))
 		{
 			$feedback=$e->getMessage();
 		}
-	/*}*/
 	
 }
 ?>

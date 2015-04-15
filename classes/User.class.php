@@ -8,6 +8,7 @@
 		private $m_sEmail;
 		private $m_sDate;
 		private $m_sPassword;
+		private $m_sPassword2;
 
 		
 		public function __set($p_sProperty, $p_vValue)
@@ -15,6 +16,11 @@
 			switch($p_sProperty)
 			{
 				case "Username": $this->m_sVoornaam = $p_vValue;
+				//check of username al bestaat
+				/*if()
+				{
+					throw new Exception("Username reeds in gebruik.");
+				}*/
 				break;
 
 				case "Surname": $this->m_sVoornaam = $p_vValue;
@@ -24,9 +30,19 @@
 				break;
 				
 				case "Email": $this->m_sEmail = $p_vValue;
+				//check of email al bestaat
+				/*if()
+				{
+					throw new Exception("Er bestaat al een account met dit mailadres.");
+				}*/
 				break;
 
 				case "Date": $this->m_sDate = $p_vValue;
+				//check of leeftijd > 
+				if(strtotime($p_vValue) > now())
+				{
+					throw new Exception("Nog geen 18? Vraag je ouders om een Kinderspel account aan te maken.");
+				}
 				break;
 				
 				case "Password": 
@@ -35,6 +51,14 @@
 				{
 					throw new Exception("Password not long enough.");
 				}
+				//check of paswoord repeat juist
+				/*if($p_vValue != $m_sPassword2)
+				{
+					throw new Exception("Paswoord niet identiek.");
+				}*/
+
+
+
 				$salt = "ergzg85fhfhf0ea6g5654";
 				$this->m_sPassword = md5($p_vValue.$salt);
 				break;
@@ -71,13 +95,15 @@
 		{
 			// save user to database
 			$db = new Database();
-			$sSql = "insert into tblusers (voornaam, naam, email, geboortedatum, password)
+			$sSql = "insert into tblusers (username, paswoord, voornaam, naam, email, geboortedatum)
 					values(
+							'".$db->conn->real_escape_string($this->m_sUsername)."'
+							'".$db->conn->real_escape_string($this->m_sPassword)."'
 							'".$db->conn->real_escape_string($this->m_sVoornaam)."', 
 							'".$db->conn->real_escape_string($this->m_sName)."', 
 							'".$db->conn->real_escape_string($this->m_sEmail)."',
 							'".$db->conn->real_escape_string($this->m_sDate)."',
-							'".$db->conn->real_escape_string($this->m_sPassword)."'
+							
 					)";
 			$rResult = $db->conn->query($sSql);
 			header('Location: login.php');
@@ -96,7 +122,7 @@
 			
 
 				// echo "Login geslaagd";
-				header('Location: tafels.php');
+				header('Location: index.php');
 			} 
 			else 
 			{
