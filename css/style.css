@@ -30,7 +30,6 @@ p{
     text-align: center;
      color: white;
 }
-
 #container{
 	margin: 100px auto 0 auto;
 	padding:50px;
@@ -53,7 +52,7 @@ h2{
 }
 
 p,a, label{
-	color:white;
+	color:black;
 	display: block;
 }
 nav{

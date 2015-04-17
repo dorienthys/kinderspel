@@ -1,9 +1,11 @@
 <?php 
-		/*session_start();
-		if(!isset($_SESSION['login']))
-		{
-			header('Location: index.php');
-		}*/
+include_once("classes/Verhaal.class.php");
+$verhaal = new Verhaal();
+
+$result = $verhaal->getlijst(6);
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +40,26 @@
 
     <img src="images/star.png" alt="icoon star" class="storyicoon"/>
     <h1 class="story">KIES EEN VERHAAL</h1>  
+
+<?php
+$i = 1;
+    while ($lijst = $result->fetch_assoc())
+    {
+        ?>
+        <div class="verhalen">
+            <div id="verhaal<?php echo $i ?>">
+                <img src="<?php echo $lijst['startimg']?>" alt="<?php echo $lijst['omschrijving']?>" class="foto"/>
+                <h1><?php echo $lijst['omschrijving']?></h1>
+                <button type="button" class="freebtn" id="btn1" disabled>GRATIS</button>
+            </div>
+        </div>
+
+<?php $i++; } ?>
     
+    
+    
+    <!--    
+
         <div class="verhalen">
             <div id="verhaal1">
                 <img src="images/junlge.png" alt="jungle" class="foto"/>
@@ -46,7 +67,6 @@
                 <button type="button" class="freebtn" id="btn1" disabled>GRATIS</button>
             </div>
         </div>
-    
     
     <div class="verhalen">
             <div id="verhaal2">
@@ -74,7 +94,8 @@
             </div>
     </div>
 
-       
+    -->
+    
 </div>     
     
     

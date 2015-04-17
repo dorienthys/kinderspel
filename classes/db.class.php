@@ -3,8 +3,8 @@
 	{
 		private $m_sHost = "localhost";
 		private $m_sUser = "root";
-		private $m_sPassword = "root";
-		private $m_sDatabase = "kinderspel";
+		private $m_sPassword = "";
+		private $m_sDatabase = "eindwerk";
 		public $conn;
 
 
