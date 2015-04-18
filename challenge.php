@@ -49,7 +49,7 @@ $i = 1;
         <div class="verhalen">
             <div id="verhaal<?php echo $i ?>">
                 <img src="<?php echo $lijst['startimg']?>" alt="<?php echo $lijst['omschrijving']?>" class="foto"/>
-                <h1><?php echo $lijst['omschrijving']?></h1>
+                <a href="pagina.php?paginaNr=0"><h1><?php echo $lijst['omschrijving']?></h1></a>
                 <button type="button" class="freebtn" id="btn1" disabled>GRATIS</button>
             </div>
         </div>

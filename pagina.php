@@ -53,8 +53,10 @@ $res = $result->fetch_assoc();
 <div class="site-wrap"> 
 
 <?php
+$buttonText = "Nieuwe opdracht";
 if ($res['PaginaNummer']==0){
     echo $res['Omschrijving'];
+    $buttonText = "Start opdracht";
 }
 
 if ($res['Prijs']==1){
@@ -63,7 +65,7 @@ if ($res['Prijs']==1){
 
 if ($res['Wachtwoord']==1){
     echo "<input type='password' name='wachtwoord' placeholder='Wachtwoord mama of papa'/>";
-    
+    $buttonText = "Voltooi Opdracht";
 }
 
 if ($res['Score']==1){
@@ -86,7 +88,7 @@ if ($res['Omschrijving'] != null){
     
 ?>
 
-    <a href="pagina.php?paginaNr=<?php $paginaNr++; echo $paginaNr?>">Next</a></div>     
+    <a href="pagina.php?paginaNr=<?php $paginaNr++; echo $paginaNr?>"><?php echo $buttonText?></a></div>     
     
     
  
