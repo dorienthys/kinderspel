@@ -36,7 +36,7 @@ $result = $verhaal->getlijst(6);
     
     <!--end menu-->
  
-<div class="site-wrap"> 
+<div class="site-wrap" id="challenge"> 
 
     <img src="images/star.png" alt="icoon star" class="storyicoon"/>
     <h1 class="story">KIES EEN VERHAAL</h1>  

@@ -277,26 +277,11 @@ img.profiel{
 
 /*EINDE HAMBURGER*/
 
-.site-wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 4em;
-    background-image: url(../images/banner.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: white;
-    background-size: 100%;
-    height: 840px;
-}
-
-
-
 img.storyicoon{
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    margin-top: -15px;
 
 }
 
@@ -489,16 +474,26 @@ img.foto{
     transform: translate(48%, -50%);
 }
 /*EINDE VERHAAL4*/
-
-.achtergrond{
+.site-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 4em;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative; 
+    background-color: white;
+    background-size: 100%;
+    height: 840px;
 }
 
 #jungle{
     background-image: url(../images/jungleBG.png);
+}
+
+#challenge{
+    background-image: url(../images/banner.png);
+    background-position: top;
 }
 
 .omschrijving{
@@ -507,25 +502,35 @@ img.foto{
     font-size: 55px;
     padding-left: 60px;
     padding-right: 60px;
-    padding: 50px;
+    padding-top: 10px;
     color: white;
+    margin-top: 50px;
     position: relative;
     text-align: center; 
+}
+
+.titel{
+    font-family: 'robotomedium' sans-serif;
+    font-weight: 100;
+    font-size: 65px;
+    
 }
 
 #start{
     background-color: #489DF9;
     font-family: 'robotomedium' sans-serif;
-    font-weight: 100;
     font-size: 30px;
-    padding: 10px;
-    width: 300px;
+    position: absolute;
+    top:60%;
+    left: 15%;
+    width: 350px;
     height: 60px;
+    color: white;   
 }
 
 .wachtwoord{
-    width: 290px;
-    height: 55px;
+    width: 338px;
+    height: 40px;
     font-family: 'robotomedium', sans-serif;
     font-weight: 100;
     color: black;
@@ -534,15 +539,15 @@ img.foto{
     margin-right: auto;
     font-size: 20px;
     position: absolute;
-    margin-left: 150px;
-    margin-right: 150px;
+    left:40%;
+    top:52%;
 }
 
 .bananen{
     display: inline-block;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    left: 27%;
+    margin-top: 120px;
 }
 
 .banaan{

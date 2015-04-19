@@ -49,9 +49,9 @@ $res = $result->fetch_assoc();
 <label for="nav-trigger"></label> 
     <!--end hamburger menu-->
  
-<div class="site-wrap"> 
-    <div class="achtergrond" id="jungle">
-
+    
+<div class="site-wrap" id="jungle"> 
+     
 <?php
 $buttonText = "Nieuwe opdracht";
 if ($res['PaginaNummer']==0){
@@ -68,6 +68,13 @@ if ($res['Wachtwoord']==1){
     $buttonText = "Voltooi Opdracht";
 }
 
+
+if ($res['Omschrijving'] != null){
+   echo "<h1 class='titel'>" . $res['Titel']. "</h1>";
+   echo "<p class='omschrijving'>" . $res['Omschrijving']. "</p>";
+    }
+
+
 if ($res['Score']==1){
 
     echo "<ul>";
@@ -81,16 +88,12 @@ if ($res['Score']==1){
     $totaalscore++;
     $_SESSION['score']=$totaalscore;
 }
-
-if ($res['Omschrijving'] != null){
-   echo "<p class='omschrijving'>" . $res['Omschrijving']. "</p>";
-    }
     
 ?>
-
-    <a href="pagina.php?paginaNr=<?php $paginaNr++; echo $paginaNr?>"><button id="start"><?php echo $buttonText?></button></a>
     
-    </div>
+    <input type="submit" id="start" value="<?php echo $buttonText?>"/>
+
+    
 </div>     
     
     
