@@ -14,10 +14,39 @@ if ($paginaNr==0){
 }
 
 $totaalscore = $_SESSION['score'];
-
+echo $_SESSION['score'];
 
 $result = $pagina->getpagina($paginaNr,1);
 $res = $result->fetch_assoc();
+
+
+
+$error = "";
+if (isset($_POST['btnVolgende'])) 
+{
+    $paginaNr++;
+    if ($res['Wachtwoord']==1){
+        try{
+            include_once("classes/Ouder.class.php");
+            $ouder = new Ouder();
+            $ouder -> Email = $_SESSION["Email"];
+            $ouder -> Wachtwoord = $_POST['wachtwoord'];   
+
+        if ($ouder -> BevestigLogin() == 1){
+            header('Location: pagina.php?paginaNr='.$paginaNr);
+        }else{
+            throw new Exception("uw wachtwoord of Email is fout");   
+        }
+        }catch (Exception $e){
+            $error = $e->getMessage();   
+        }
+    }else{
+       
+    header('Location: pagina.php?paginaNr='.$paginaNr);
+    }
+        
+        
+}
 
 
 ?>
@@ -52,6 +81,9 @@ $res = $result->fetch_assoc();
     
 <div class="site-wrap" id="jungle"> 
      
+
+    <form action="" method="post">
+
 <?php
 $buttonText = "Nieuwe opdracht";
 if ($res['PaginaNummer']==0){
@@ -76,7 +108,6 @@ if ($res['Omschrijving'] != null){
 
 
 if ($res['Score']==1){
-
     echo "<ul>";
     for ($i = 1; $i <= $totaalscore; $i++){
     echo "<li class='bananen'><img class='banaan' src='".$res['ScoreVolImg']."' alt='ScoreVol' class='ScoreVol'/></li>";        
@@ -84,16 +115,16 @@ if ($res['Score']==1){
     for ($i = 1; $i <= 10-$totaalscore; $i++){
     echo "<li class='bananen'><img class='banaan' src='".$res['ScoreLeegImg']."' alt='ScoreLeeg' class='ScoreLeeg'/></li>";        
     }
-    echo "</ul>";
-    $totaalscore++;
-    $_SESSION['score']=$totaalscore;
+    echo "</ul>";      
+    $_SESSION['score']=$totaalscore + 0.5;
+    
 }
     
 ?>
     
-    <input type="submit" id="start" value="<?php echo $buttonText?>"/>
+    <input type="submit" id="start" name="btnVolgende" value="<?php echo $buttonText?>"/> </form>
+ 
 
-    
 </div>     
     
     

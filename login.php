@@ -1,13 +1,27 @@
 <?php 
 
-include_once("classes/User.class.php");
+include_once("classes/Ouder.class.php");
 
+$error = "";
 if (isset($_POST['btnLogin'])) 
 {
-	$user = new User();
-	$user -> Username = $_POST['username'];
-	$user -> Password = $_POST['password'];
-	$user -> canLogin();
+	try{
+    $ouder = new Ouder();
+	$ouder -> Email = $_POST['Email'];
+	$ouder -> Wachtwoord = $_POST['Wachtwoord'];
+    
+    if ($ouder -> BevestigLogin() == 1){
+        session_start();
+        $_SESSION["Email"] = $_POST['Email'];
+        header('Location: challenge.php');
+    }else{
+     throw new Exception("uw wachtwoord of Email is fout");   
+    }
+    }catch (Exception $e){
+     $error = $e->getMessage();   
+    }
+        
+        
 }
 ?>
 
@@ -28,18 +42,18 @@ if (isset($_POST['btnLogin']))
 		<img src="images/icon_account.png" alt="account icon" class="bol"/>
 		
 		<h1>AANMELDEN</h1>
-		<p>Heb je al een account? Log je dan hier in met jouw gebruikersnaam en wachtwoord.</p>
+		<p>Heb je al een account? Log je dan hier in met jouw Email en wachtwoord.</p>
 
 		<form action="" method="post">
-				<input class="login" type="text" name="username" placeholder="gebruikersnaam" required="required" />
-				<input class="login" type="password" name="password" placeholder="Paswoord" required="required"/>
+				<input class="login" type="text" name="Email" placeholder="Email" required="required" />
+				<input class="login" type="password" name="Wachtwoord" placeholder="Wachtwoord" required="required"/>
 			
 		<input type="submit" name="btnLogin" value="Inloggen" />
 		</form>
 
 		<a href="register.php"class="subbtn">Nog geen account? Klik dan hier.</a> 
 
-
+        <label id="error"><?php echo $error ?></label>
 
 	</section>
 	

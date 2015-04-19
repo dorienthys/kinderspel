@@ -1,19 +1,20 @@
 <?php 
-//include_once("classes/User.class.php");
-if (isset($_POST['btnSignup'])) 
+include_once("classes/Ouder.class.php");
+if (!empty($_POST)) 
 {
 		try
 		{
-		$user = new User();
-		$user -> Username = $_POST['username'];
-		$user -> Surname = $_POST['surname'];
-		$user -> Name = $_POST['name'];
-		$user -> Password = $_POST['password1'];
-		$user -> Password2 = $_POST['password2'];
-		$user -> Email = $_POST['email'];
-		$user -> Date = $_POST['date'];
-		$user -> Checkpass();
-		$user -> Register();
+		$ouder = new Ouder();
+		$ouder -> Voornaam = $_POST['Voornaam'];
+		$ouder -> Naam = $_POST['Naam'];
+		$ouder -> Wachtwoord = $_POST['Wachtwoord'];
+		$ouder -> Email = $_POST['Email'];
+		$ouder -> Geboortedatum = $_POST['Geboortedatum'];
+        $ouder -> Plaats = "test";
+        $ouder -> Adres = "test";
+		$ouder -> Register();
+        echo 'hello';    
+        
 		}
 	
 		catch (Exception $e)
@@ -36,7 +37,7 @@ if (isset($_POST['btnSignup']))
 	<section id="container">
 		<img src="images/icon_register.png" alt="account icon" class="bol"/>
 		<h1>REGISTRATIE</h1>
-		<p>Hier maak je een ouder-account aan voor "Da's Kinderspel". Dit account gebruik je om deze applicatie te beheren. Nadien kan je kind-accounts aanmaken om jouw kinderen de app te laten gebruiken.</p>
+		<p>Hier maak je een account aan voor "Da's Kinderspel". Dit account gebruik je om deze applicatie te beheren. Nadien kan je kind-accounts aanmaken om jouw kinderen de app te laten gebruiken.</p>
 
 		<h2>FACEBOOK REGISTRATIE</h2>
 		
@@ -45,24 +46,23 @@ if (isset($_POST['btnSignup']))
 		<h2>ZELF EEN ACCOUNT AANMAKEN</h2>
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 			<div class="formblok">
-				<label for="username">Kies een unieke gebruikersnaam en paswoord voor jouw ouder-account</label>
-				<input type="text" name="username" id="username" placeholder="gebruikersnaam"required="required" />
-				<input type="password" id="password1" name="password1" placeholder="wachtwoord"/>
+				<label for="naam">Kies een unieke gebruikersnaam en paswoord voor uw account </label>
+				<input type="password" id="Wachtwoord" name="Wachtwoord" placeholder="wachtwoord"/>
 				<input type="password" id="password2" name="password2" placeholder="wachtwoord herhalen"/>
 			
 			</div>
 			<div class="formblok">
-				<label for="surname">Vul hier je eigen naam in.</label>
-				<input type="text" name="surname" id="surname" placeholder="voornaam"required="required" />
-				<input type="text" name="name" id="name" placeholder="achternaam"required="required" />
+				<label for="Voornaam">Vul hier je eigen naam in.</label>
+				<input type="text" name="Voornaam" id="Voornaam" placeholder="voornaam"required="required" />
+				<input type="text" name="Naam" id="Naam" placeholder="achternaam"required="required" />
 			</div>
 			<div class="formblok">
 				<label for="email">Vul hier jouw e-mailadres in, hierop krijg je later de gegevens van jouw account.</label>
-				<input type="email" id="email" name="email" placeholder="Email"/>
+				<input type="email" id="email" name="Email" placeholder="Email"/>
 			</div>
 			<div class="formblok">
 				<label for="date">Jouw geboortedatum</label>	
-				<input type="date" name="date" id="date" placeholder="Geboortedatum" required="required"/>
+				<input type="date" name="Geboortedatum" id="date" placeholder="Geboortedatum" required="required"/>
 			</div>
 			<div class="formblok">
 				</div>
