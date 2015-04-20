@@ -79,6 +79,7 @@ if (isset($_POST['btnVolgende']))
     <!--end hamburger menu-->
  
     
+    
 <div class="site-wrap" id="jungle"> 
      
 
@@ -120,6 +121,11 @@ if ($res['Score']==1){
     
 }
     
+if ($res['Mascotte'] != null){
+   echo "<img src=". $res['Mascotte']." 'alt='aap' class='aap'/>";
+    }
+
+
 ?>
     
     <input type="submit" id="start" name="btnVolgende" value="<?php echo $buttonText?>"/> </form>

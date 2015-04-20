@@ -6,10 +6,7 @@
     src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('Roboto-Medium-webfont.woff2') format('woff2'),
          url('Roboto-Medium-webfont.woff') format('woff'),
-         url('Roboto-Medium-webfont.ttf') format('truetype'),
-         url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+         url('Roboto-Medium-webfont.ttf') format('truetype');
 
 }
 
@@ -319,8 +316,8 @@ label[for="nav-trigger"] {
 /*EINDE HAMBURGER*/
 
 .story{
-    font-family: 'robotomedium', sans-serif;
-    font-weight:100;
+    font-family: 'roboto', sans-serif;
+    font-weight:500;
     color: #F5683D;
     margin-top: 25px;
     font-size: 40px;
@@ -342,13 +339,15 @@ label[for="nav-trigger"] {
 }
 
 #verhaal1 h1{
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
     position: absolute;
-    top: 50%;                         
+    top: 25%;   
+    font-size: 30px;
     transform: translate(50%, -50%);
     
 }
+
 
 img.foto{
     width: 100px;
@@ -363,16 +362,15 @@ img.foto{
     width: 100px;
     height: 35px;
     background-color: #5ebc4b;
-    font-family: 'robotomedium', sans-serif;
-    font-weight: 100;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
     color: white;
     font-size: 18px;
-    vertical-align: middle;
     text-align: center;
     line-height: 8px;
     position: absolute;
     top: 50%;                         
-    transform: translate(700%, -50%);
+    transform: translate(250%, -90%);
     float: right;
 }
 
@@ -497,7 +495,7 @@ img.foto{
 }
 
 .omschrijving{
-    font-family: 'robotomedium' sans-serif;
+    font-family: 'roboto' sans-serif;
     font-weight: 100;
     font-size: 55px;
     padding-left: 60px;
@@ -510,7 +508,7 @@ img.foto{
 }
 
 .titel{
-    font-family: 'robotomedium' sans-serif;
+    font-family: 'roboto' sans-serif;
     font-weight: 100;
     font-size: 65px;
     
@@ -518,8 +516,9 @@ img.foto{
 
 #start{
     background-color: #489DF9;
-    font-family: 'robotomedium' sans-serif;
-    font-size: 30px;
+    font-family: 'roboto' sans-serif;
+    font-weight: 100;
+    font-size: 40px;
     position: absolute;
     top:60%;
     left: 15%;
@@ -531,7 +530,7 @@ img.foto{
 .wachtwoord{
     width: 338px;
     height: 40px;
-    font-family: 'robotomedium', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 100;
     color: black;
     text-align: center;
@@ -553,6 +552,13 @@ img.foto{
 .banaan{
     width: 80px;
     height: 100px;
+}
+
+.aap{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 55%;
 }
 
 
