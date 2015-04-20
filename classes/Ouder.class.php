@@ -96,7 +96,7 @@
 
 	// save Ouder to database
 				$db = new Database();
-				$sSql = "insert into tblOuders (Naam, Voornaam, Wachtwoord, Geboortedatum, Plaats, Adres, Email)
+				$sql = "insert into tblOuders (Naam, Voornaam, Wachtwoord, Geboortedatum, Plaats, Adres, Email)
 					values( 
 							'".$db->conn->real_escape_string($this->m_sNaam)."',
 							'".$db->conn->real_escape_string($this->m_sVoornaam)."',
@@ -106,7 +106,7 @@
 							'".$db->conn->real_escape_string($this->m_sAdres)."',
                             '".$db->conn->real_escape_string($this->m_sEmail)."'        
 					      )";
-			$db->conn->query($sSql);
+			$db->conn->query($sql);
 			header('Location: index.php');
 				
 

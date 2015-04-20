@@ -13,7 +13,6 @@ if (!empty($_POST))
         $ouder -> Plaats = "test";
         $ouder -> Adres = "test";
 		$ouder -> Register();
-        echo 'hello';    
         
 		}
 	

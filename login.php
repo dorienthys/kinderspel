@@ -13,7 +13,7 @@ if (isset($_POST['btnLogin']))
     if ($ouder -> BevestigLogin() == 1){
         session_start();
         $_SESSION["Email"] = $_POST['Email'];
-        header('Location: speler.php');
+        header('Location: kind.php');
     }else{
      throw new Exception("uw wachtwoord of Email is fout");   
     }
