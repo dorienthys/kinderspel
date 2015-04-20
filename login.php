@@ -48,7 +48,7 @@ if (isset($_POST['btnLogin']))
 				<input class="login" type="text" name="Email" placeholder="Email" required="required" />
 				<input class="login" type="password" name="Wachtwoord" placeholder="Wachtwoord" required="required"/>
 			
-		<input type="submit" name="btnLogin" value="Inloggen" />
+		<input type="submit" name="btnLogin" value="Inloggen" class="logbtn"/>
 		</form>
 
 		<a href="register.php" class="subbtn">Nog geen account? Klik dan hier.</a> 

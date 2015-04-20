@@ -34,6 +34,8 @@ p{
 }
 
 h1,h2{
+    font-family: 'roboto',sans-serif;
+    font-weight: 300;
     text-align: center;
 	color:white;
 }
@@ -41,6 +43,7 @@ h1,h2{
 h1{
     font-size: 30px;
     margin: 30px;
+   
 }
 
 h2{
@@ -51,6 +54,9 @@ h2{
 p,a, label{
 	color:black;
 	display: block;
+    color: white;
+    font-family: 'roboto',sans-serif;
+    font-weight: 300;
 }
 nav{
 	max-width:340px;
@@ -83,6 +89,11 @@ nav img{
 	margin-top: 10px;
 	height:35px;
 	display:inline-block;
+}
+
+.indexbtn{
+    font-family: 'roboto',sans-serif;
+    font-weight: 300;
 }
 
 /* ---------------- INDEXPAGE ----------------*/
@@ -126,6 +137,8 @@ input {
     margin-right: auto;
     margin-left:auto;
     display:block;
+    font-family: 'roboto',sans-serif;
+    border: none;
 }
 
 .indexbtn, button {
@@ -161,6 +174,7 @@ input{
 .subbtn{
     text-align: center;
 }
+
 
 nav img{
     margin-top: 10px;
@@ -219,10 +233,11 @@ input[type="radio"] {
 input[type="submit"]{
     background-color: white;
     border: none;
-    font-family: 'robotomedium' , sans-serif;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 300;
     color: #F5683D;
-    font-size: 35px;
-    /*width: 579px;*/
+    font-size: 40px;
+    border: none;
     width:50%;
     height: 60px;
     margin-left: 25%;
