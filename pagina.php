@@ -14,7 +14,7 @@ if ($paginaNr==0){
 }
 
 $totaalscore = $_SESSION['score'];
-echo $_SESSION['score'];
+
 
 $result = $pagina->getpagina($paginaNr,1);
 $res = $result->fetch_assoc();

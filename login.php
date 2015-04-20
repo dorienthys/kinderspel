@@ -13,7 +13,7 @@ if (isset($_POST['btnLogin']))
     if ($ouder -> BevestigLogin() == 1){
         session_start();
         $_SESSION["Email"] = $_POST['Email'];
-        header('Location: challenge.php');
+        header('Location: speler.php');
     }else{
      throw new Exception("uw wachtwoord of Email is fout");   
     }
@@ -51,7 +51,7 @@ if (isset($_POST['btnLogin']))
 		<input type="submit" name="btnLogin" value="Inloggen" />
 		</form>
 
-		<a href="register.php"class="subbtn">Nog geen account? Klik dan hier.</a> 
+		<a href="register.php" class="subbtn">Nog geen account? Klik dan hier.</a> 
 
         <label id="error"><?php echo $error ?></label>
 
