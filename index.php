@@ -22,7 +22,7 @@
         <div id="container">
         <img src="images/icon_account.png" alt="account icoon" class="bol"/>
         <h1>INLOGGEN</h1>
-        <p>Om te kunnen inloggen moet één van de ouders inloggen met Facebook.</p>
+        <p>Het inloggen moet gebeuren door één van de ouders of voogden.</p>
         <a href="speler.php"/><button class="indexbtn" id="fbbtn">Inloggen met Facebook</button> </a>
 
     

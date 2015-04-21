@@ -29,13 +29,17 @@ session_start();
 		
 
         <div id="container">
+            
         <img src="images/icon_account.png" alt="account icoon" class="bol"/>
             <h1>Wie gaat er spelen?</h1>
         <p>Hier kan je per kind een account aanmaken.</p>
+            
+            
+           
         <a href="kindtoevoegen.php"/><button id="toevoegenbtn">+</button> </a>
      
        
-<div class="kinderen">
+ <div class="kinderen">
 <?php 
 $i=1;
         while ($lijst = $result ->fetch_assoc())
@@ -43,11 +47,11 @@ $i=1;
 ?>
     <div class="kind">
             <img src="<?php echo $lijst['Afbeelding']?>" alt="<?php echo $lijst['Voornaam']?>" class="foto"/>
-        <label><?php echo $lijst['Voornaam']?></label>
+        <label class="naam"><?php echo $lijst['Voornaam']?></label>
         
         <?php $i++; } ?>
     </div>
- </div>    
+</div>    
     </div> 
 
 		<!--<img src="images/mascotte_index.png" alt="kinderspelmascotte" class="indeximg"/>-->

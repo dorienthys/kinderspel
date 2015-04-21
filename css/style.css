@@ -183,7 +183,6 @@ nav img{
 }
 
 #toevoegenbtn{
-    position: absolute;
     width: 150px;
     height: 150px;
     background-color:  #F5683D;
@@ -191,9 +190,36 @@ nav img{
     border-style: dashed;
     font-size: 8vh;
     text-align: center;
-    margin-left: 280px;
-    margin-top: 80px;
 }
+
+
+.kinderen{
+    top:50%;
+ 
+}
+
+.kind .foto{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 35%;
+    left: 45%;
+    padding: 20px;
+    transform: translate(-50%, -50%)
+ 
+}
+
+.kind .naam{
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    z-index: -1;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-10%, -30%);
+}
+
 
 #spelertoevoegenbtn{
     width: 400px;
@@ -222,13 +248,14 @@ input[type="text"], input[type="date"], input[type="password"]  {
     border: none;
 }
 
-input[type="radio"] {
+input[type="radio"]  {
     position: relative;
     margin-top: 20px;
     width: 20px;
     height: 20px;
     color:white;
 }
+
 
 input[type="submit"]{
     background-color: white;
@@ -252,7 +279,6 @@ input[type="submit"]{
 
 /*BEGIN HAMBURGER*/
 .navigation {
-    list-style: none;
     background: #F5683D;
     width: 100%;
     height: 100%;
@@ -283,7 +309,6 @@ img.profiel{
     text-decoration: none;
     color: #F5683D;
     padding: 0.5em 1em 0.5em 1.5em;
-    position: absolute;
     margin-top: 12px;
 }
 
@@ -403,20 +428,23 @@ img.foto{
 }
 
 #jungle{
-    background-image: url(../images/jungleBG.png);
-    height: 843px;
-    
+    background-image: url(../images/jungleBG1.png);
+    position: relative;
+    margin-top: 70px;
+    background-position: top;
+    background-size: cover;
+    height: 780px;
 }
 
 #challenge{
     background-image: url(../images/banner.png);
     background-position: top;
-    height: 843px;
+    height: 850px;
 }
 
 .omschrijving{
     font-family: 'roboto' sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 55px;
     padding-left: 60px;
     padding-right: 60px;
@@ -447,6 +475,7 @@ img.foto{
     color: white;   
 }
 
+
 .wachtwoord{
     width: 338px;
     height: 40px;
@@ -475,18 +504,13 @@ img.foto{
 }
 
 .aap{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 55%;
+    left: 10%;
 }
 
-.kinderen{
-}
-
-.kind{
-    padding: 120px;
-}
 
 
 

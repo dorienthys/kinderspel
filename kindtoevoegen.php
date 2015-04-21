@@ -84,7 +84,7 @@ try
             <div class="formblok">
             <!--<label class="spelerlbl" for="V">MEISJE</label>-->
             <label for="geslacht">GESLACHT</label>
-            <input type="radio" id="geslacht" name="Geslacht" value="vrouw" id="V" checked>MEISJE</input>
+            <input type="radio" name="Geslacht" value="vrouw" id="V" checked>MEISJE</input>
             <!--<label class="spelerlbl" for="M">JONGEN</label>-->
             <input type="radio" name="Geslacht" value="man" id="M">JONGEN</input>
             </div>

@@ -10,8 +10,8 @@ if (!empty($_POST))
 		$ouder -> Wachtwoord = $_POST['Wachtwoord'];
 		$ouder -> Email = $_POST['Email'];
 		$ouder -> Geboortedatum = $_POST['Geboortedatum'];
-        $ouder -> Plaats = "test";
-        $ouder -> Adres = "test";
+        $ouder -> Plaats = $_POST['Plaats'];
+        $ouder -> Adres = $_POST['Adres'];
 		$ouder -> Register();
         
 		}
@@ -57,14 +57,14 @@ if (!empty($_POST))
 			</div>
 			<div class="formblok">
 				<label for="email">Vul hier jouw e-mailadres in, hierop krijg je later de gegevens van jouw account.</label>
-				<input type="email" id="email" name="Email" placeholder="Email"/>
-			</div>
-			<div class="formblok">
-				<label for="date">Jouw geboortedatum</label>	
+				<input type="email" id="email" name="Email" placeholder="Email"/>	
 				<input type="date" name="Geboortedatum" id="date" placeholder="Geboortedatum" required="required"/>
 			</div>
 			<div class="formblok">
-				</div>
+                <label for="plaats"> Vul hier je woonplaats en adres in.</label>
+                <input type="text" name="Plaats" id="Plaats" placeholder="Plaats" required="required"/>
+                <input type="text" name="Adres" id="Adres" placeholder="Adres" required="required"/>
+            </div>
 
 		<div class="feedback">
 			<?php

@@ -88,7 +88,7 @@ if (isset($_POST['btnVolgende']))
 <?php
 $buttonText = "Nieuwe opdracht";
 if ($res['PaginaNummer']==0){
-    $buttonText = "Start Opdracht";
+    $buttonText = "Start opdracht";
     
 }
 
@@ -128,8 +128,10 @@ if ($res['Mascotte'] != null){
 
 ?>
     
-    <input type="submit" id="start" name="btnVolgende" value="<?php echo $buttonText?>"/> </form>
- 
+    <input type="submit" id="start" name="btnVolgende" value="<?php echo $buttonText?>"/>
+    </form>
+    
+  
 
 </div>     
     
