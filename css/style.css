@@ -428,7 +428,7 @@ img.foto{
 }
 
 #jungle{
-    background-image: url(../images/jungleBG1.png);
+    background-image: url(../images/jungleBG2.png);
     position: relative;
     margin-top: 70px;
     background-position: top;
@@ -444,20 +444,20 @@ img.foto{
 
 .omschrijving{
     font-family: 'roboto' sans-serif;
-    font-weight: 300;
-    font-size: 55px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 10px;
+    font-weight: 500;
+    font-size: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
     color: white;
-    margin-top: 50px;
+    margin-top: 70px;
     position: relative;
     text-align: center; 
 }
 
 .titel{
     font-family: 'roboto' sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 65px;
     
 }
