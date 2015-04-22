@@ -23,7 +23,7 @@
         <img src="images/icon_account.png" alt="account icoon" class="bol"/>
         <h1>INLOGGEN</h1>
         <p>Het inloggen moet gebeuren door één van de ouders of voogden.</p>
-        <a href="speler.php"/><button class="indexbtn" id="fbbtn">Inloggen met Facebook</button> </a>
+        <a href="kind.php"/><button class="indexbtn" id="fbbtn">Inloggen met Facebook</button> </a>
 
     
     <a href="login.php"/><button class="indexbtn" id="indexbtn1">Inloggen</button> </a>
