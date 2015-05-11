@@ -1,0 +1,125 @@
+html {
+    overflow-y: scroll;
+}
+
+/*
+Setup a basic body
+*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+/*
+Header is relative so z-index: 1 guarantees always displayed on top
+*/
+header {
+    padding: 10px;
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #489DF9;
+}
+
+/*
+using background color is important to cover the menu
+position absolute isset to cover the whole viewport
+*/
+#content {
+    background-color: #FFFFFF;
+    padding: 52px 10px 10px 10px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    -webkit-box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: -10px 0px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*
+the hamburger button with a little gradient effekt
+*/
+#hamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height:30px;
+    padding:10px;
+}
+
+/*
+The white stripes in the hamburger button
+*/
+#hamburger div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 2px 2px;
+    height: 4px;
+    width: 40px;
+    margin-bottom: 5px;
+
+}
+
+/*
+The navigation container in the background
+*/
+nav {
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
+    width: 70%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color:#F47840;
+
+}
+
+/*
+Style the navigation menu
+*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 20;
+}
+
+nav li {
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #444444;
+    padding: 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+The Layer that will be layed over the content
+so that the content is unclickable while menu is shown
+*/
+#contentLayer {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    z-index: 5;
+}
