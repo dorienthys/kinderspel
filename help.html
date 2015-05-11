@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/mediaqueries.css"/>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="js/hamburger.js"></script>
     <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css" />
+    <link rel="stylesheet" type="text/css"  media="all" href="css/mediaqueries.css"/>
 </head>
 <body>
 
-<div id="x">
 
-    <!--The Hamburger Button in the Header-->
-    <header>
+
+<!--The Hamburger Button in the Header-->
+ <header>
+
         <div id="hamburger">
             <div></div>
             <div></div>
@@ -28,13 +29,33 @@
 
     <!--The mobile navigation Markup hidden via css-->
     <nav>
+        <img src="images/icon_account.png" alt="navimg" class="nav"/>
         <ul>
            <li><a href="index.php">MIJN OPDRACHTEN</a></li>
             <li><a href="mijnverhalen.php">MIJN VERHALEN</a></li>
-           <li><a href="account.php">MIJN PROFIEL</a></li>
-           <li><a href="help.php">HELP</a></li>
+           <li><a href="account.php">OUDERPROFIEL</a></li>
+           <li><a href="help.html">HELP</a></li>
+
+           <a class="logout" href="logout.php">uitloggen</a>
         </ul>
     </nav>
+</header>
+
+    <script>
+$(document).ready(function(){
+    $(".toggle p").toggle();
+
+    $("#toggle1").click(function(){ $("#toggle1 p").toggle();})
+    $("#toggle2").click(function(){ $("#toggle2 p").toggle();})
+    $("#toggle3").click(function(){ $("#toggle3 p").toggle();})
+    $("#toggle4").click(function(){ $("#toggle4 p").toggle();})
+    $("#toggle5").click(function(){ $("#toggle5 p").toggle();})
+    $("#toggle6").click(function(){ $("#toggle6 p").toggle();})
+    $("#toggle7").click(function(){ $("#toggle7 p").toggle();})
+    $("#toggle8").click(function(){ $("#toggle8 p").toggle();})
+});
+
+</script>   
  
 <div class="site-wrap" id="help"> 
 
@@ -42,56 +63,46 @@
     <h1 class="story">HELP ?!</h1>  
 
     <h2>Opdrachten</h2>
-    <div id="toggle1">
-        <h3>Hoe start ik een nieuw verhaal?</h3>
+    <div id="toggle1" class="toggle">
+        <h3>Hoe start ik een nieuw verhaal?<span>&#9660</span></h3>
         <p>Bij 'mijn verhalen' kan je kijken welk verhaal je nu bent gestart. Als je een nieuw verhaal starten wil klik je op één van de andere verhalen op deze pagina.</p>
     </div>
-    <div id="toggle2">
-        <h3>Hoe koop ik een nieuwe opdracht?</h3>
+    <div id="toggle2" class="toggle">
+        <h3>Hoe koop ik een nieuwe opdracht?<span>&#9660</span></h3>
         <p>Sommige opdrachten zijn gratis, voor anderen moet je aan je ouders vragen deze te like'n op Facebook of deze via de App store aan te schaffen. Vraag dus je mama of papa om hulp.</p>
     </div>
-    <div id="toggle3">
-        <h3>Waarom staat er een Facebook knop?</h3>
+    <div id="toggle3" class="toggle">
+        <h3>Waarom staat er een Facebook knop?<span>&#9660</span></h3>
         <p>Jouw mama of papa kan zich via Facebook aanmelden, nadien kunnen ze dan jouw gemaakte opdrachten op facebook posten of dit spel like'n op Facebook. Nadien kan jij dan nog meer opddrachten en spelletjes spelen.</p>
     </div>
     
     <h2>Levels</h2>
-    <div id="toggle4">
-        <h3>In welke level zit ik nu?</h3>
+    <div id="toggle4" class="toggle">
+        <h3>In welke level zit ik nu?<span>&#9660</span></h3>
         <p>...</p>
     </div>
-    <div id="toggle5">
-        <h3>Hoe stijg ik een level?</h3>
+    <div id="toggle5" class="toggle">
+        <h3>Hoe stijg ik een level?<span>&#9660</span></h3>
         <p>Als je opdrachten vervolledigd en deze laat goedkeuren door je ouders krijg je XP punten. Hoe meer opdrachten je vervolledigd, hoe sneller je punten krijgt en dus stijgt naar een hogere level.</p>
     </div>
 
     <h2>Voor de ouders</h2>
-    <div id="toggle6">
-    <h3>Hoe verloopt de aankoop van een opdracht?</h3>
+    <div id="toggle6" class="toggle">
+    <h3>Hoe verloopt de aankoop van een opdracht?<span>&#9660</span></h3>
     <p>Sommige opdrachten zijn gratis, voor anderen hoef je enkel onze facebook-pagina te like'n of iemand te introduceren voor deze game. De aankoop van nieuwe opdrachten verloopt via de App Store of Play Store. Het is dus een veilige manier van aankoop en verloopt net zoals de aanschap van een nieuwe applicatie voor je smartphone of tablet.</p>
     </div>
-    <div id="toggle7">
-    <h3>Wat gebeurt er met mijn Facebook account?</h3>
+    <div id="toggle7" class="toggle">
+    <h3>Wat gebeurt er met mijn Facebook account?<span>&#9660</span></h3>
     <p>Da's KinderSpel zal nooit zelf persoonlijke informatie verspreiden of posten op Facebook. Je kan via de app gemaakte opdrachten posten op Facebook </p>
     </div>
-    <div id="toggle8">
-    <h3>Hoe voeg ik een kind-account toe?</h3>
-    <p>...</p>
+    <div id="toggle8" class="toggle">
+    <h3>Hoe voeg ik een kind-account toe?<span>&#9660</span></h3>
+    <p>Ga via de navigatie (linksboven) naar je ouderaccount, van daaruit kan je je kindaccounts aanpassen of er extra toevoegen.</p>
     </div>
 
 
     
 </div>     
-  
-    
-    
-<script>
-$(document).ready(function(){
-    $(".toggle1").click(function(){
-        $(".toggle1 p").toggle();
-    });
-});
-</script>	
 
 	
 </body>

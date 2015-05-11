@@ -17,28 +17,42 @@ $result = $verhaal->getlijst(6);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/mediaqueries.css"/>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/hamburger.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css" />
+    <link rel="stylesheet" type="text/css"  media="all" href="css/mediaqueries.css"/>
 </head>
 <body>
 
-    
-    <!--hamburger menu-->
-  <ul class="navigation">
-    <img src="images/icon_account.png" alt="profiel" class="profiel"/>
-    <li class="nav-item"><a href="index.php">MIJN OPDRACHTEN</a></li>
-    <li class="nav-item"><a href="mijnverhalen.php">MIJN VERHALEN</a></li>
-    <li class="nav-item"><a href="help.php">HELP</a></li>
-</ul>
-    
- 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-    
-    <!--end menu-->
+    <!--The Hamburger Button in the Header-->
+ <header>
+
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!--The mobile navigation Markup hidden via css-->
+    <nav>
+        <img src="images/icon_account.png" alt="navimg" class="nav"/>
+        <ul>
+           <li><a href="index.php">MIJN OPDRACHTEN</a></li>
+            <li><a href="mijnverhalen.php">MIJN VERHALEN</a></li>
+           <li><a href="account.php">OUDERPROFIEL</a></li>
+           <li><a href="help.html">HELP</a></li>
+
+           <a class="logout" href="logout.php">uitloggen</a>
+        </ul>
+    </nav>
+</header>
+
  
 <div class="site-wrap" id="challenge"> 
 
-    <img src="images/star.png" alt="icoon star" class="storyicoon"/>
+    <img src="images/star.png" alt="icoon star" class="storyicoon2"/>
     <h1 class="story">KIES EEN VERHAAL</h1>  
 
 <?php
